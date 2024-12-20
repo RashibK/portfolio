@@ -3,16 +3,27 @@
     padding: 0;
 }
 
+body {
+    background-color: #6A040F;
+    position: relative;
+    height:110vh;
+}
+
+
+/* Header Section CSS */
+
 header {
-    background-color: #2596be;
+    background-color: #370617;
     margin-top: 5vh;
     height: 10vh;
-
+    position: sticky;
+    top: 0px;
 }
 
 header nav {
     height: 100%;
     padding: 0 20vw;
+
 }
 
 header nav ul {
@@ -28,10 +39,36 @@ header nav ul li {
 
 a {
     text-decoration: none;
-    color: #06A3F9;
+    color: #E85D04;
 }
 
 a:hover {
-    color: #FFC900;
+    color: #D00000;
 }
 
+.main-logo:hover {
+    color: #F48C06;
+}
+
+.main-logo {
+    cursor: pointer;
+    margin: 0.8vh 0 0 0;
+}
+
+@media screen and (max-width: 1000px) {
+    header nav {
+        padding: 0 10vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header nav {
+        padding: 0 5vw;
+    }
+}
+
+/* @media screen and (max-width: 660px) {
+    header nav {
+        padding: 0 5vw;
+    }
+} */
