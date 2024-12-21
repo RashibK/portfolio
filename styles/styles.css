@@ -33,6 +33,7 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    position: relative;
 }
 
 header nav ul li {
@@ -52,7 +53,7 @@ a:hover {
     color: #F48C06;
 }
 
-.main-logo {
+.main-logo, .main-logo-hidden {
     cursor: pointer;
     margin: 0.8vh 0 0 0;
 
@@ -72,6 +73,28 @@ span {
     margin: 3px 0.2em;
 } 
 
+.main-logo-hidden {
+    display: none;
+}
+
+.main-logo-hidden, .main-logo {
+   cursor: pointer;
+}
+
+
+.small-sidebar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 10em;
+    top: 100%;
+    right: 0%;
+    background-color: #370617;
+    padding: 1em 1em;
+}
 
 @media screen and (max-width: 1000px) {
     header nav {
@@ -87,9 +110,19 @@ span {
 
 @media screen and (max-width: 650px) {
     header nav {
-        padding: 0 5vw;
+        padding: 0 5em;
     }
+
+    .main-logo-hidden {
+        display:initial ;
+    }
+
     .hamburger {
         display: flex;
     }
+
+    .about, .projects,  .main-logo, .resume, .contact {
+        display: none;
+    }
+    
 }
