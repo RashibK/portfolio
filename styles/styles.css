@@ -4,18 +4,33 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #6A040F;
-    position: relative;
-    height:110vh;
-
+:root {
+    --body-color:  #6A040F;
+    --nav-bar-color: #370617;
+    --nav-text-color: #E85D04;
+    --nav-text-color-hover: #D00000;
+    --hero-text: white;
+    --hero-section-bg: #E85D04;
 }
 
+body {
+    background-color: var(--body-color);
+    position: relative;
+    height:110vh;
+    
+}
 
 /* Header Section CSS */
 
+.video-container, .video {
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+}
+
 header {
-    background-color: #370617;
+    background-color: var(--nav-bar-color);
     margin-top: 0.9em;
     height: 5em;
     position: sticky;
@@ -42,15 +57,15 @@ header nav ul li {
 
 a {
     text-decoration: none;
-    color: #E85D04;
+    color: var(--nav-text-color);
 }
 
 a:hover {
-    color: #D00000;
+    color: var(--nav-text-color-hover);
 }
 
 .main-logo:hover {
-    color: #F48C06;
+
 }
 
 .main-logo, .main-logo-hidden {
@@ -92,7 +107,7 @@ span {
     height: 10em;
     top: 100%;
     right: 0%;
-    background-color: #370617;
+    background-color: var(--nav-bar-color);
     padding: 1em 1em;
 }
 
@@ -131,3 +146,65 @@ span {
     
 }
 
+
+/* main section */
+
+.hero-section {
+    background-color:var(--hero-section-bg);
+    border-radius: 2rem;
+    width: 80%;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+
+    
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.name {
+    font-size: 5rem;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+}
+
+.first-line {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wave {
+    background-color: transparent;
+    border: none;
+}
+
+/* .wave {
+    animation-name: 'rotate-hi';
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate-hi {
+    from {
+        background-color: red;
+    }    
+    to {
+        background-color: black;
+    }    
+} */
