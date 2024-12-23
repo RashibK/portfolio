@@ -11,6 +11,7 @@
     --nav-text-color-hover: #D00000;
     --hero-text: white;
     --hero-section-bg: #E85D04;
+    --hero-section-font-color: #03071E;
 }
 
 body {
@@ -35,6 +36,7 @@ header {
     height: 5em;
     position: sticky;
     top: 0px;
+    z-index: 999;
 }
 
 header nav {
@@ -113,21 +115,125 @@ span {
 
 
 
-@media screen and (max-width: 1000px) {
+
+
+/* main section */
+
+.hero-section {
+    background-color:var(--hero-section-bg);
+    border-radius: 2rem;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    padding: 2% 2%;
+}
+
+.greeting {
+    color: var(--hero-section-font-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.name {
+    font-size: 500%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap;     */
+}
+
+.title {
+    font-size: 200%;
+}
+
+.subtitle {
+    font-size: 108%;
+}
+
+.first-line {
+    font-size: 287%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wave {
+    background-color: transparent;
+    border: none;
+}
+
+.wave {
+    animation-name: rotate-hi;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+
+}
+
+.downward-arrow {
+    padding-top: 10vh;
+}
+
+@keyframes rotate-hi {
+    from {
+        transform: rotate(0.02turn);
+    }    
+    to {
+        transform: rotate(0.09turn);
+    }    
+}
+
+
+/* responsive media */
+
+@media screen and (max-width: 1000px) { 
+   /* header */
+   
     header nav {
         padding: 0 10vw;
     }
 
+    /* .hero-section */
+
 }
 
 @media screen and (max-width: 750px) {
+       /* header */
     header nav {
         padding: 0 5vw;
     }
 
+    /* .hero-section */
+     
+    .name {
+        font-size: 3.2em;
+    } 
+    
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .first-line {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
 }
 
 @media screen and (max-width: 650px) {
+       /* header */
     header nav {
         padding: 0 6vw;
     }
@@ -143,68 +249,33 @@ span {
     .about, .projects,  .main-logo, .resume, .contact {
         display: none;
     }
+
+
+    /* .hero-section */
+
+}
+
+
+@media screen and (max-width: 480px) {
     
-}
+    /* .hero-section */
 
-
-/* main section */
-
-.hero-section {
-    background-color:var(--hero-section-bg);
-    border-radius: 2rem;
-    width: 80%;
-    height: 30em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2em auto;
-
+    .name {
+        font-size: 1.9em;
+    } 
     
+    .title {
+        font-size: 1rem;
+    }
+    
+    .subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .first-line {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
 }
-
-.greeting {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.name {
-    font-size: 5rem;
-}
-
-.title {
-    font-size: 2rem;
-}
-
-.subtitle {
-    font-size: 1.5rem;
-}
-
-.first-line {
-    font-size: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.wave {
-    background-color: transparent;
-    border: none;
-}
-
-/* .wave {
-    animation-name: 'rotate-hi';
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes rotate-hi {
-    from {
-        background-color: red;
-    }    
-    to {
-        background-color: black;
-    }    
-} */
