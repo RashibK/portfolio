@@ -226,29 +226,117 @@ main {
 /* .projects */
 
 .projects-section {
-
     border-radius: 2rem;
     background-color: var(--hero-section-bg);
-    height: 80vh;
     margin: auto;
 
 }
 
-.project1 , .project2, .project3 {
+.project {
     background-color: black;
-    height: 2em;
+    /* height: 20rem; */
     color: white;
+    padding: 2rem;
+    display: flex;
+    column-gap: 2em;
+    border-radius: 2em;
 }
 
 .list-project {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     column-gap: 2em;
     row-gap: 2em;
     
 }
 
+.project-item-image{
+    width: 35%;
 
+}
+.project-item-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.projects-title {
+    font-size: 4rem;
+    color: var(--hero-section-font-color);
+    text-align: center;
+}
+
+.project-item-info {
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 1em;
+}
+
+.project-item-name {
+    width: 100%;
+    /* text-align: center; */
+}
+
+.tech {
+
+    background-color: #DC2F02;
+    color: white;
+    border: none;
+    border-radius: 2em;
+    width: 6em;
+  height: 3em;
+}
+
+.tech:hover {
+    background-color: #6A040F;  
+    color: #d8572a;
+    cursor: pointer;
+}
+
+.project-item-tech {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 1em;
+    column-gap: 1em;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.source {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.view-source {
+    display: flex;
+    cursor: pointer;
+
+}
+
+.view-source a, .live-demo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.view-source a img, .live-demo a img {
+    width: 48px;
+    height: 48px;
+
+}
+
+.view-source a span, .live-demo a span {
+    border: none;
+}
 
 /* responsive media */
 
@@ -261,6 +349,30 @@ main {
 
     /* .hero-section */
 
+    /* .project */
+
+    .project {
+        background-color: #03071E;
+        /* height: 20rem; */
+        color: white;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2em;
+    }
+
+    .project-item-info {
+        width: 100%;
+        height: auto; 
+    }
+
+    .project-item-image{
+        width: 100%;
+        height: 49%;
+    
+    }
 }
 
 @media screen and (max-width: 750px) {
