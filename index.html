@@ -7,31 +7,32 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-   <nav class="sidebar">
-            <ul>
-                <div  class="main-logo-hidden"><img src="images/logo.svg" alt="Logo" width="64" height="64"></div>
-                    <li class="about"><a href="#hero-section">ABOUT</a></li>
-                    <li class="projects"><a href="#projects-section">PROJECTS</a></li>
-                    <div  class="main-logo"><img src="images/logo.svg" alt="Logo" width="64" height="64"></div>
-                    <li class="resume"><a href="#">RESUME</a></li>
-                    <li class="contact"><a href="#">CONTACT</a></li>
+    <div class="header-wrapper"><header>
+        <nav class="sidebar">
+                 <ul>
+                     <div  class="main-logo-hidden"><img src="images/logo.svg" alt="Logo" width="64" height="64"></div>
+                         <li class="about"><a href="#hero-section">ABOUT</a></li>
+                         <li class="projects"><a href="#projects-section">PROJECTS</a></li>
+                         <div  class="main-logo"><img src="images/logo.svg" alt="Logo" width="64" height="64"></div>
+                         <li class="resume"><a href="#">RESUME</a></li>
+                         <li class="contact"><a href="#contacts-section">CONTACT</a></li>
+     
+                         <div class="small-sidebar">
+                             <li class="about-sidebar"><a href="#hero-section">ABOUT</a></li>
+                             <li class="projects-sidebar"><a href="#project-section">PROJECTS</a></li>
+                             <li class="resume-sidebar"><a href="#">RESUME</a></li>
+                             <li class="contact-sidebar"><a href="#contacts-section">CONTACT</a></li></div>
+                         <div class="hamburger" onclick="showSideIcons()">
+                             <span class="line1"></span>
+                             <span class="line2"></span>
+                             <span class="line3"></span>
+                         </div>
+                 </ul>
+     
+     
+             </nav>      
+         </header></div>
 
-                    <div class="small-sidebar">
-                        <li class="about-sidebar"><a href="#hero-section">ABOUT</a></li>
-                        <li class="projects-sidebar"><a href="#project-section">PROJECTS</a></li>
-                        <li class="resume-sidebar"><a href="#">RESUME</a></li>
-                        <li class="contact-sidebar"><a href="#">CONTACT</a></li></div>
-                    <div class="hamburger" onclick="showSideIcons()">
-                        <span class="line1"></span>
-                        <span class="line2"></span>
-                        <span class="line3"></span>
-                    </div>
-            </ul>
-
-
-        </nav>      
-    </header>
     <main>
         <div class="hero-section" id="hero-section">
             <div class="greeting">     
@@ -42,7 +43,7 @@
             </div>
             <div class="downward-arrow"><img src="images/down-arrow.svg" alt="down arrow"></div>
         </div>
-        <div class="projects-section" id="projects-section">
+        <section class="projects-section" id="projects-section">
             <h1 class="projects-title">Projects</h1>
             <div class="list-project">
             <div class="project">
@@ -107,8 +108,24 @@
 </div>
         </div>
 
+    </section>
+
+
+    <section class="contacts-section" id="contacts-section">
+        <div class="contact-info">
+            <h1 class="contact-me">Contact</h1>
+            <p class="wanna-chat">Wanna have a chat?</p>
+            <div class="contact-email">contact@rashib.dev</div>
         </div>
-    
+
+        <div class="message-box">
+            <label for="contact-name" class="contact-name"><input type="text" id="contact-name" placeholder="Full Name*">
+            </label><label for="email" class="email"><input type="email" id="email" placeholder="Email*"></label>
+            <label for="subject" class="subject"><input type="text" id="subject" placeholder="Subject"></label>
+            <label for="message" class="message"><input type="text" id="message" placeholder="Message*"></label>
+            <button class="send-message"><span>Send a message</span><img src="images/icons/send.svg" alt=""></button>
+        </div>
+    </section>
     </main>
     <script src="scripts/main.js"></script>
 </body>
