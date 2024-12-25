@@ -452,6 +452,22 @@ main {
     /* font-size: 5em; */
 }
 
+
+/* .footer-section */
+
+footer {
+    background-color: var(--hero-section-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+}
+
+.footer-icon {
+    width: 32px;
+    height: 32px;
+}
+
 /* responsive media */
 
 @media screen and (max-width: 1000px) { 
@@ -712,8 +728,7 @@ main {
     /* .contacts-section */
     
     #contact-name, #email, #subject, #message {
-        width: 30%;
-        /* padding: 1em 1.3em; */
+        padding: 1em 1.3em;
         /* border: 1px solid var(--nav-text-color); */
         border-radius: 4%;
     }
