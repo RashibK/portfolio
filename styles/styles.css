@@ -348,11 +348,12 @@ main {
 /* .contact-section */
 
 .contacts-section {
-    height: 100vh;
+
     background-color: var(--hero-section-bg);
     margin: 1em 0;
     display: flex;
     gap: 2em;
+    padding: 0 1em;
 
 }
 
@@ -361,7 +362,30 @@ main {
     width: 49%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
+}
+
+.contact-me {
+    font-size: 107px;
+}
+
+.wanna-chat {
+    font-size: 30px;
+}
+
+.contact-email {
+    display: flex;
+    align-items: center;
+}
+
+.email-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.actual-email {
+    font-size: 20px;
 }
 
 .message-box {
@@ -371,7 +395,7 @@ main {
     flex-direction: column;
     padding: 2em;
     justify-content: center;
-  align-items: center;
+    align-items: center;
     row-gap: 2em;
 }
 
@@ -379,17 +403,29 @@ main {
 
 
 .contact-name, .email, .subject, .message {
-    
+    border: none;
+    margin: 0 1rem;
+
+}
+.message {
 
 }
 
 #contact-name, #email, #subject, #message {
-    height: 3em;
-    width: 30em;
+    margin: 0 1em;
+    padding: 1em 8em;
+    /* border: 1px solid var(--nav-text-color); */
+    border-radius: 4%;
+    outline: none;
+    border-style: none;
+    text-align: start;
 }
 
 #message {
-    height: 20em;
+    resize: none;
+    padding: 7em 8em;
+    border-radius: 2%;
+
 }
 
 .send-message {
@@ -405,6 +441,7 @@ main {
 
 .send-message span {
     border: none;
+    border-style: none;
 }
 .contact-info .contact-me {
     /* font-size: 5em; */
@@ -444,6 +481,24 @@ main {
         width: 100%;
         height: 49%;
     
+    }
+
+    /* .contacts-section */
+
+    .contacts-section {
+        display: flex;
+        flex-direction: column;
+
+    
+    }
+
+    .contact-info {
+        padding: 2em;
+        width: 100%;
+    }
+
+    .message-box {
+        width: 100%;
     }
 }
 
