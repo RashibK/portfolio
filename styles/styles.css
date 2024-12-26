@@ -15,14 +15,16 @@ html {
 }
 
 :root {
-    --body-color:  #6A040F;
-    --nav-bar-color: #370617;
-    --nav-text-color: #E85D04;
+    --body-color:  rgb(255, 253, 242);
+    --nav-bar-color: rgb(255, 253, 242);
+    --nav-text-color: rgb(26, 26, 26);
     --nav-text-color-hover: #D00000;
     --hero-text: white;
-    --hero-section-bg: #E85D04;
-    --hero-section-font-color: #03071E;
+    --hero-section-bg: rgb(255, 253, 242);
+    --hero-section-font-color: rgb(26, 26, 26);
     --header-height: calc(5em + 0.9em);
+    --projects-bg: rgb(136, 136, 136);
+    --projects-font: rgb(26, 26, 26);;
 }
 
 body {
@@ -105,7 +107,7 @@ li a:hover {
 }
 
 span {
-    border: 0.2em solid #E85D04;
+    border: 0.2em solid var(--nav-text-color);
     margin: 3px 0.2em;
 } 
 
@@ -128,7 +130,7 @@ span {
     height: 10em;
     top: 100%;
     right: 0%;
-    background-color: var(--nav-bar-color);
+    background-color: transparent;
     padding: 1em 1em;
 }
 
@@ -159,8 +161,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2em auto;
+    margin: 8em auto;
     padding: 2% 2%;
+    gap: 8vh;
 }
 
 .greeting {
@@ -169,6 +172,7 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    gap: 0.1rem;
 }
 
 .name {
@@ -203,7 +207,7 @@ main {
     animation-name: rotate-hi;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
     animation-direction: alternate;
 
 }
@@ -213,7 +217,7 @@ main {
     animation-name: down-arrow;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
     animation-direction: alternate;
 }
 
@@ -253,9 +257,9 @@ main {
 }
 
 .project {
-    background-color: black;
+    background-color: var(--projects-bg);
     /* height: 20rem; */
-    color: white;
+    color: var(--projects-font);
     padding: 2rem;
     display: flex;
     column-gap: 2em;
@@ -405,7 +409,7 @@ main {
 }
 
 .message-box {
-    background-color: var(--nav-bar-color);
+    background-color: var(--projects-bg);
     width: 49%;
     display: flex;
     flex-direction: column;
@@ -428,6 +432,7 @@ main {
 .message {
 
 }
+
 
 #contact-name, #email, #subject, #message {
     margin: 0 1em;
@@ -498,7 +503,7 @@ footer {
     /* .project */
 
     .project {
-        background-color: #03071E;
+        background-color: var(--projects-bg);;
         /* height: 20rem; */
         color: white;
         padding: 2rem;
@@ -557,25 +562,25 @@ footer {
     }
 
     /* .hero-section */
-     
+
     .name {
-        font-size: 3.2em;
+        font-size: 11.6vw;
     } 
     
     .title {
-        font-size: 1.5rem;
+        font-size: 6.2vw;
     }
     
     .subtitle {
-        font-size: 1rem;
+        font-size: 4.2vw;
     }
     
     .first-line {
-        font-size: 1.5rem;
+        font-size: 7vw;
         display: flex;
         justify-content: center;
         align-items: center;
-    } 
+    }  
 
     /* .contacts-section */
     .contact-me {
@@ -622,6 +627,11 @@ footer {
     .hamburger {
         display: flex;
     }
+ .hamburger .line {
+        transition-duration: 0.5s;
+
+    }
+
 
     .about, .projects,  .main-logo, .resume, .contact {
         display: none;
@@ -681,24 +691,23 @@ footer {
     /* .hero-section */
 
     .name {
-        font-size: 1.9em;
+        font-size: 11.6vw;
     } 
     
     .title {
-        font-size: 1rem;
+        font-size: 6.2vw;
     }
     
     .subtitle {
-        font-size: 0.8rem;
+        font-size: 4.2vw;
     }
     
     .first-line {
-        font-size: 1.2rem;
+        font-size: 7vw;
         display: flex;
         justify-content: center;
         align-items: center;
-    } 
-
+    }  
      /* .contacts-section */
 
 
