@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 :root {
@@ -12,12 +22,12 @@
     --hero-text: white;
     --hero-section-bg: #E85D04;
     --hero-section-font-color: #03071E;
+    --header-height: calc(5em + 0.9em);
 }
 
 body {
     background-color: var(--body-color);
     position: relative;
-    height:110vh;
 
     
 }
@@ -66,12 +76,12 @@ header nav ul li {
     list-style: none;
 }
 
-a {
+li a {
     text-decoration: none;
     color: var(--nav-text-color);
 }
 
-a:hover {
+li a:hover {
     color: var(--nav-text-color-hover);
 }
 
@@ -133,6 +143,10 @@ main {
     padding: 0 2em;
     margin: 0 auto;
 
+}
+
+.hero-section-wrapper {
+    min-height: calc(100vh - var(--header-height));
 }
 
 .hero-section {
@@ -386,6 +400,8 @@ main {
 
 .actual-email {
     font-size: 20px;
+    text-decoration: none;
+    color: black;
 }
 
 .message-box {
