@@ -44,3 +44,17 @@ window.addEventListener('resize', () => {
         sideBarElement.style.display = 'none';
     }
 })
+
+// function hideSideBar() {
+//  const sideBarElement = document.querySelector('.small-sidebar');
+
+//  if (sideBarElement.style.display === 'flex') {
+//     sideBarElement.style.display = 'none';
+   
+// }
+// else {
+//     sideBarElement.style.display = 'flex';
+
+// }
+
+// }
