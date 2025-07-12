@@ -4,7 +4,9 @@
   --font-unica-one: "Unica One", sans-serif;
   --font-noto-sans: "Noto Sans", sans-serif;
   --font-open-sans: "Open Sans", sans-serif;
-  --animate-main-fadeIn: fadeIn 1s both; 
+  --animate-main-fadeIn: fadeIn 1s both;
+  --shadow-header: -1px -2px 3px rgba(0, 0, 0, 0.45);
+  --animate-slideUp: slideUp 0.3s both;
 }
 
 @keyframes fadeIn {
@@ -13,5 +15,16 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translateZ(0);
   }
 }
