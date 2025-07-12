@@ -5,8 +5,10 @@
   --font-noto-sans: "Noto Sans", sans-serif;
   --font-open-sans: "Open Sans", sans-serif;
   --animate-main-fadeIn: fadeIn 1s both;
+  --animate-about-fadeIn: fadeIn 0.5s both;
   --shadow-header: -1px -2px 3px rgba(0, 0, 0, 0.45);
   --animate-slideUp: slideUp 0.3s both;
+  --shadow-red: inset 0 -4px #fe5185;
 }
 
 @keyframes fadeIn {

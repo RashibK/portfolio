@@ -9,7 +9,7 @@ const HomePage: React.FC = () => {
           <h1 className="font-unica-one tracking-[0.96px] text-[1.6em] font-bold leading-[61.43px] text-center">
             /Rashib Khanal/
           </h1>
-          <p className="font-noto-sans mb-[1.5em] text-center text-[0.7em] leading-normal tracking-[0.96px] opacity-[0.9]">
+          <p className="font-noto-sans italic mb-[1.5em] text-center text-[0.7em] leading-normal tracking-[0.96px] opacity-[0.9]">
             Developer building stuffs on internet :)
           </p>
           <nav className="">
