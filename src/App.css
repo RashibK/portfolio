@@ -8,6 +8,7 @@
   --animate-about-fadeIn: fadeIn 0.5s both;
   --shadow-header: -1px -2px 3px rgba(0, 0, 0, 0.45);
   --animate-slideUp: slideUp 0.3s both;
+  --animate-slideDown: slideDown 0.3s both;
   --shadow-red: inset 0 -4px #fe5185;
 }
 
@@ -26,7 +27,17 @@
     visibility: visible;
   }
 
-  to {
+  100% {
     transform: translateZ(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    visibility: hidden;
+    transform: translate3d(0, 100%, 0);
   }
 }
