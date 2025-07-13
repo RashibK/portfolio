@@ -27,10 +27,10 @@ const HomePage: React.FC = () => {
           </nav>
         </div>
         <div className="opacity-[0.6] ">
-          <p className="text-[0.7em] mb-[0.9em]">
+          <p className="text-[14.4px] tracking-[0.96px] leading-[1.2] font-noto-sans text-[0.7em] mb-[0.9em]">
             &copy; 2025{" "}
             <a
-              className="hover:text-[#fe5185] transition-colors duration-400 ease-out"
+              className="font-open-sans tracking-[0.96px] leading-[1.2] hover:text-[#fe5185] transition-colors duration-400 ease-out"
               href="/"
             >
               Rashib Khanal

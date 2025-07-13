@@ -5,7 +5,7 @@ const About: React.FC = () => {
   return (
     <>
       <Header />
-      <main className="max-w-[960px] mt-[10em] my-0 mx-auto animate-about-fadeIn tracking-[0.96px] leading-[25.6px]">
+      <main className="max-w-[960px] w-[93%] mt-[10em] my-0 mx-auto animate-about-fadeIn tracking-[0.96px] leading-[25.6px] max-[1800px]:mt-[8em] max-[1800px]:max-w-[720px] max-[1300px]:mt-[6em] max-[960px]:mt-[3em] max-[800px]:mt-auto">
         <h1 className="font-unica-one text-[2em] leading-[51.2px] my-[0.67em] font-bold  mx-0">
           About
         </h1>
@@ -27,7 +27,8 @@ const About: React.FC = () => {
           <hr className="opacity-[0.1] border-r-0 border-l-0 border-b-[5px] border-t-0 border-dashed w-[50%] my-[1.8em] mx-auto" />
           <p className="font-noto-sans my-4">Some of my project are:</p>
           <ul>
-            <li>
+            <li className="list-disc ml-6">
+              {" "}
               <a
                 className="font-open-sans no-underline shadow-red hover:text-[#fe5185] transition-colors duration-[0.25s] ease-out"
                 href="https://ratemyshow.vercel.app/"
@@ -40,7 +41,8 @@ const About: React.FC = () => {
                 directly in Crunchyroll.
               </span>
             </li>
-            <li>
+            <li className="list-disc ml-6">
+              {" "}
               <a
                 className="font-open-sans no-underline shadow-red hover:text-[#fe5185] transition-colors duration-[0.25s] ease-out"
                 href="https://github.com/BarsatKhadka/WordBuddy.ai"
@@ -53,9 +55,10 @@ const About: React.FC = () => {
                 pronunciation.
               </span>
             </li>
-            <li>
+            <li className="list-disc ml-6">
+              {" "}
               <a
-                className="font-open-sans n o-underline shadow-red hover:text-[#fe5185] transition-colors duration-[0.25s] ease-out"
+                className="font-open-sans no-underline shadow-red hover:text-[#fe5185] transition-colors duration-[0.25s] ease-out"
                 href="https://github.com/BarsatKhadka/PrepAI/"
                 target="_blank"
               >
@@ -86,7 +89,7 @@ const About: React.FC = () => {
             </a>
             .
           </p>
-          <footer className="text-[0.9em] text-center mt-16 mb-24 max-w-[960px] ">
+          <footer className="text-[0.9em] text-center mt-16 mb-24 w-[93%] max-[1800px]:max-w-[720px]">
             <p className="font-noto-sans leading-[23.033px]">
               &copy; 2025{" "}
               <a
